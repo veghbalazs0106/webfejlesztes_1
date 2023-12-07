@@ -125,17 +125,7 @@ footer{
     flex: 1 1 98%;
 }
 
-ul{
-    list-style-type: none;
-}
-
 /*___KEZDŐLAP_TAGJEI___*/
-
-/*:first{
-    display: flex;
-    flex: 1 1 96%;
-    align-items: center;
-}*/
 
 #oldal{
     display: flex;
@@ -143,7 +133,7 @@ ul{
     flex-basis: 98%;
     text-align: left;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 10px;
     color: white;
     line-height: 1.5em;
@@ -157,7 +147,7 @@ ul{
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 98%;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: left;
     line-height: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -174,7 +164,6 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*justify-content: space-around;*/
     align-items: center;
     flex-basis: 98%;
     background-color: black;
@@ -194,15 +183,6 @@ ul{
     border-radius: 10px;
     margin: 3% auto 3% auto;
 }
-
-
-/*.tabla2{
-    padding: 2%;
-    margin: 0;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-}*/
 
 .paragrafus{
     text-align: left;
