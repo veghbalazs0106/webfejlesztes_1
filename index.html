@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Végh Balázs">
+    <meta name="description"
+        content="Ez a weboldal egy rövid bemutató a freestyle foci sportról. A nyereményjátékkal az oldal alján lehet nyerni egy vadonatúj labdát!">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Freestyle foci kisokos</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#jatek").validate({
+                rules: {
+                    kernev: "required",
+                    datum: "required",
+                    felhasznalonev: {
+                        required: true,
+                        minlength: 8
+                    },
+                    password: {
+                        required: true,
+                        minlength: 8
+                    },
+                    password_ketto: {
+                        required: true,
+                        minlength: 8
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    adatvedelem: {
+                        required: true,
+                    },
+                },
+
+                messages: {
+                    kernev: "Ez a mező kötelező!",
+                    datum: "Ez a mező kitöltendő!",
+                    felhasznalonev: {
+                        required: "Ez a mező kötelező!",
+                        minlength: "Legalább 8 karakternek kell lennie!"
+                    },
+                    password: {
+                        required: "Ez a mező kötelező!",
+                        minlength: "Legalább 8 karaktert kell tartalmaznia!"
+                    },
+                    password_ketto: {
+                        required: "Ez a mező kötelező!",
+                        minlength: "Legalább 8 karaktert kell tartalmaznia!"
+                    },
+                    email: {
+                        required: "Ez a mező kötelező!",
+                        email: "Valós email címet adj meg!"
+                    },
+                    adatvedelem: "Ez a mező kitöltendő!",
+                },
+
+            });
+        });
+    </script>
+    <style>
+        label.error {
+            display: flex;
+            flex-basis: 20%;
+            color: white;
+            margin-left: 0;
+            margin-right: 5%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="fejlec">
+        <h1>Freestyle foci kisokos</h1>
+    </header>
+    <div class="container">
+        <nav id="navigacio">
+            <article class="first">
+                <a href="#" id="current">Kezdőlap</a>
+            </article>
+            <article class="first">
+                <a href="sportaginfo.html">Sportáginfók</a>
+            </article>
+            <article class="first">
+                <a href="sporteszkozok.html">Sporteszközök</a>
+            </article>
+            <article class="first">
+                <a href="versenyek.html">Versenyek</a>
+            </article>
+        </nav>
+
+        <aside id="oldal">
+            <h2>
+                Sportolj te is!
+            </h2>
+            <p>
+                Felmérések szerint Magyarország az élmezőnyben szerepel az elhízottság és az egészségtelen életmód
+                területén. Viszont ezen nem csak azért kell változtatni mert ebben a mutatóban országunknak jobban kell
+                állnia, hanem mert az emberek boldogsága és egészséges életmódja a legfontosabb.
+                Viszont ezekért nekünk kell tennünk. Egy nap pár óra vagy akár csak egy óra edzés vagy aktív testmozgás
+                is hozzásegíthet minket a jobb alakhoz, egészségesebb életmódhoz és kiegyensúlyozottabb élethez.
+            </p>
+        </aside>
+
+        <article class="bevezeto" id="masodik_oldal">
+            <h2>Foci kicsit másképp?</h2>
+            <p>
+                Nehéz manapság már olyan embert találni aki valamilyen módon ne találkozott volna már a footballal. A
+                labdarúgás az egyik, ha nem a legnépszerűbb és legnagyobb körben ismert és űzött sport a világon.
+                Ugyanakkor azt már kevesen tudják, hogy mi is az a freestyle foci pontosan. Dekázni kell egy labdával és
+                csinálni menő mozdulatokat. Valahogy így magyarázná el valaki aki még nem ismeri behatóbban ezt a
+                különleges lebdazsonglőr sportot. Nos részben igaza is van annak aki ezt állítja, részben pedig téved.
+            </p>
+        </article>
+        <article class="bevezeto">
+            <h2>Mi is az a freestyle foci?</h2>
+            <p>
+                A freestyle foci egy keverék sportág. A két hozzá legközelebb álló sport a hagyományos football és a
+                breaktánc. A freestyle foci egy olyan intenzív extrém sport, amely nem örvend olyan népszerűségnek az
+                emberek körében, mint mondjuk az ejtőernyőzés vagy a bunjee-jumping. Sok kitartást igényel és nem kíméli
+                az ember idegeit, de ha valaki rászánja az időt és kitartóan edz, olyan eredményeket érhet el, amiket
+                még ő maga sem hitt volna, hogy el tud érni. Nem csak a versenyzés jelenthet sikerélményt, egy nehéz
+                trükk elsajátítása vagy egy új modzdulat, amit rajtad kívül még senki nem csinált a világon hatalmas
+                sikerélmények és mindehhez nem kell más, csak te és egy labda!
+            </p>
+        </article>
+        <article class="bevezeto">
+            <h2>
+                Hogyan kezdj hozzá?
+            </h2>
+            <p>
+                Ha esetleg félsz attól, hogy egyedül lennél és nem tudod hogyan kezdj bele, akkor fordulj bátran a
+                sportágbeliekhez, nagyon segítőkész, barátságos közöséget allkot a magyar freestyle football community.
+                Bármilyen kérdéssel bátran fordulhatsz hozzájuk, segíteni fognak neked.
+            </p>
+        </article>
+        <article class="bevezeto">
+            <h2>
+                Hol találom meg személyesen a sportot?
+            </h2>
+            <p>
+                Magyarországon évente pár alkalommal Budapesten megrendezésre kerülnek freestyle foci meetingek.
+                Ilyenkor lehetőség nyílik megtekinteni mi is ez a sport valójában, mire képesek a sportág hazai nagyjai,
+                sőt évente egyszer külföldi, a világranglistán előkelő helyen szereplő "díszvendég" is szokott érkezni.
+                A betekintés mellett lehet kérdezni bármikor a jelenlevőktől, tanulni tőlük, érdeklődni a sportággal és
+                velük kapcsolatban is. Ekkor jelentik be a versenyeket is, amelyeken bárki indulhat és most már komoly
+                nyereményekkel lehetnek gazdagabbak azok akik dobogós helyezést érnek el.
+            </p>
+        </article>
+
+        <!--NYEREMÉNYJÁTÉK-->
+
+        <article class="nyeremenyes">
+            <form method="post" id="jatek" action="http://szamtud.uni-corvinus.hu/receive.php" novalidate>
+
+                <h2 class="nyeremenyjatek">
+                    Nyereményjáték
+                </h2>
+
+                <h3 class="nyeremenyjatek">
+                    Szeretnél egy ingyen meccslabdát magadnak vagy egy szerettednek karácsonyra? Nyerd meg!
+                </h3>
+
+                <h3 class="nyeremenyjatek">
+                    Ha igen, mindössze csak regisztrálnod kell, megadnod néhány adatodat és elmondani nekünk
+                    miért és
+                    kinek szeretnéd az itt látható eredeti 4Freestyle meccslabdát. Sok sikert!
+                </h3>
+                <figure id="nyeremeny">
+                    <img src="kepek_a_weblaokhoz/nyeremenylabda.webp"
+                        alt="Ez egy 4Freestyle controll ball v4, amely újonnan debütált a 4Freestyle weboldalán."
+                        class="image6">
+                </figure>
+                <h3 class="nyeremenyjatek">
+                    Regiszráció:
+                </h3>
+
+                <!--___FELHASZNÁLÓI_ADATOK___-->
+
+                <div class="felmeres_tarolo">
+                    <label for="veznev" class="kitoltendo">Vezetékvév:</label>
+                    <input type="text" name="veznev" class="felmeres" id="veznev" maxlength="20" value=""
+                        placeholder="Kovács">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="kernev" class="kitoltendo">Keresztnév*:</label>
+                    <input type="text" name="kernev" class="felmeres" id="kernev" maxlength="20" value=""
+                        placeholder="István">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="datum" class="kitoltendo">Születési dátum*:</label>
+                    <input type="date" name="datum" class="felmeres" id="datum" value="">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="felhasznalonev" class="kitoltendo">Felhasználónév*: </label>
+                    <input type="text" name="felhasznalonev" class="felmeres" id="felhasznalonev" maxlength="40"
+                        value="">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="password" class="kitoltendo">Jelszó*:</label>
+                    <input type="password" name="password" class="felmeres" id="password" value="">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="password2" class="kitoltendo">Jelszó ismét*:</label>
+                    <input type="password" name="password_ketto" class="felmeres" id="password2" value="">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="email" class="kitoltendo">E-mail cím*: </label>
+                    <input type="email" name="email" id="email" class="felmeres" value="" placeholder="xy@gmail.com">
+                </div>
+
+                <!--___RÁDIÓGOMBOK___-->
+
+                <div class="felmeres_tarolo">
+                    <p class="kerdes">
+                        Magamnak szeretném a labdát*:
+                    </p>
+
+                    <label for="igen" class="radio_kitoltendo">Igen</label>
+                    <input type="radio" name="magamnak_szeretnem" class="radio_felmeres" id="igen">
+
+                    <label for="nem" class="radio_kitoltendo">Nem</label>
+                    <input type="radio" name="magamnak_szeretnem" class="radio_felmeres" id="nem" checked>
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <p class="kerdes">
+                        Voltam már freestyle foci versenyen vagy találkozón*:
+                    </p>
+
+                    <label for="voltam" class="radio_kitoltendo">Igen</label>
+                    <input type="radio" name="voltam_rendezvenyen" class="radio_felmeres" id="voltam">
+
+                    <label for="nem_voltam" class="radio_kitoltendo">Nem</label>
+                    <input type="radio" name="voltam_rendezvenyen" class="radio_felmeres" id="nem_voltam" checked>
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <p class="kerdes">
+                        Milyen a kapcsolatod a freestyle focival?*
+                    </p>
+
+                    <label for="eloszor" class="radio_kitoltendo">Most hallok róla először</label>
+                    <input type="radio" name="kapcsolat_a_sporttal" class="radio_felmeres" id="eloszor" checked>
+
+                    <label for="probaltam" class="radio_kitoltendo">Próbáltam már</label>
+                    <input type="radio" name="kapcsolat_a_sporttal" class="radio_felmeres" id="probaltam">
+
+                    <label for="rendszeresen" class="radio_kitoltendo">Rendszeresen gyakorlok</label>
+                    <input type="radio" name="kapcsolat_a_sporttal" class="radio_felmeres" id="rendszeresen">
+
+                    <label for="profi" class="radio_kitoltendo">Profi vagyok</label>
+                    <input type="radio" name="kapcsolat_a_sporttal" class="radio_felmeres" id="profi">
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <p class="kerdes"> Amennyiben mindenképp szeretnél egy ilyen labdát, az alábbiak közül tudsz
+                        válogatni:</p>
+                    <p class="labdarendeles">4-es és 5-ös méretű labda közül lehet választani. A kettő között csak a
+                        méret a különbség. Valamint az ár. A 4-es méretű labda ára 29.990 Ft, az 5-ös méretű pedig
+                        45.990 Ft. A <span id="span">mentés</span> gombra kattintva megtudhatja mennyi a rendeléseinek
+                        összege.</p>
+
+                    <label for="elso_labda" class="labda_label">4-es labdából szeretnék ennyi db-ot:</label>
+                    <select name="negyeslabda" class="checkbox_felmeres" id="elso_labda">
+                        <option value="0" selected>Nem szeretnék ilyen labdát</option>
+                        <option value="1">1 db</option>
+                        <option value="2">2 db</option>
+                        <option value="3">3 db</option>
+                    </select>
+
+                    <label for="masodik_labda" class="labda_label">5-ös labdából szeretnék ennyi db-ot:</label>
+                    <select name="otoslabda" class="checkbox_felmeres" id="masodik_labda">
+                        <option value="0" selected>Nem szeretnék ilyen labdát</option>
+                        <option value="1">1 db</option>
+                        <option value="2">2 db</option>
+                        <option value="3">3 db</option>
+                    </select>
+                </div>
+
+                <div class="felmeres_tarolo">
+                    <label for="szamol"></label>
+                    <input type="button" name="mentes" id="szamol" value="Menétés">
+                </div>
+
+                <p class="tajekoztato">
+                    A *-gal jelölt mezők kitöltése kötelező!
+                </p>
+
+                <div class="felmeres_tarolo">
+                    <p class="adatvedelem">
+                        Hozzájárulok, hogya az adataimat a Freestylefootball kft. adatbázisbővítése felhasználja.
+                    </p>
+                    <label for="adatvedelem" class="adatvedelmi_elfogadas">Elfogadom</label>
+                    <input type="checkbox" name="adatvedelem" class="adatvedelmi" id="adatvedelem">
+                </div>
+
+
+                <!--___SUBMIT_ÉS_RESET___-->
+
+                <div class="felmeres_tarolo">
+                    <label for="submit"></label>
+                    <input type="submit" name="submit" id="submit" value="Regisztrálok">
+                    <label for="reset"></label>
+                    <input type="reset" name="reset" id="reset" value="Visszavonás">
+                </div>
+
+
+            </form>
+        </article>
+        <footer>
+            <p>
+                Ez az oldal csupán szemléltető jellegű, beadandó munkának készült!
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

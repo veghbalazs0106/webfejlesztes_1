@@ -1,0 +1,804 @@
+
+/*___ÁLTALÁNOS___*/
+
+@font-face {
+    font-family: "sajat_font";
+    src: url("Exo-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container>* {
+    margin: 1%;
+    height: fit-content;
+}
+
+body{
+    background-image: url("kepek_a_weblaokhoz/hatter1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*____TAGEK___*/
+
+/*___ÁLTALÁNOS_TAGEK___*/
+#fejlec{
+    display: flex;
+    justify-content: center;
+    background-image: url("kepek_a_weblaokhoz/beadando_hatter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'sajat_font';
+    border: 3px ridge white;
+    border-radius: 10px;
+    padding: 0;
+    margin: 1%;
+}
+h1{
+    flex-basis: 60%;
+    font-variant: small-caps;
+}
+
+#navigacio{
+    display: flex;
+    flex: 1 1 98%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'sajat_font';
+    font-size: 14px;
+    border: 3px ridge white;
+    border-radius: 10px;
+    height: auto;
+    background-image: url("kepek_a_weblaokhoz/beadando_hatter.jpg");
+    padding: 5px;
+    margin: 2% 1%;
+}
+
+.first{
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#current{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    margin: 0;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 90%;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:3px;
+    background-color: white;
+    margin: 1%;
+
+}
+a:hover{
+    border: 1px ridge blue;
+    color: blue;
+    background-color: black;
+    padding: 5px;
+    margin: 0;
+}
+
+footer{
+    background-image: url("kepek_a_weblaokhoz/beadando_hatter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'sajat_font';
+    border: 3px ridge white;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 98%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*___KEZDŐLAP_TAGJEI___*/
+
+/*:first{
+    display: flex;
+    flex: 1 1 96%;
+    align-items: center;
+}*/
+
+#oldal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 98%;
+    text-align: left;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: white;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 3%;
+    margin: 1%;
+}
+
+.bevezeto{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 98%;
+    opacity: 0.8;
+    text-align: left;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 3%;
+    margin: 3% 1%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+/*___SPORTÁGINFÓS_OLDAL_TAGJEI___*/
+
+.kepes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-basis: 98%;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1%;
+    color: white;
+}
+
+
+
+.image1{
+    float: center;
+    max-width: 90%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    margin: 3% auto 3% auto;
+}
+
+
+/*.tabla2{
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}*/
+
+.paragrafus{
+    text-align: left;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 6%;
+    margin-top: 1%;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.ime{
+    display: flex;
+    flex-basis: 94%;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin: 1%;
+}
+
+.image2{
+    max-width: 90%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    padding: 0;
+    margin: 1% auto 3% auto;
+ }
+
+
+/*___VERSENYEK_TAGJEI___*/
+
+.cim{
+    display: flex;
+    flex-basis:60%;
+    font-size: 2em;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.image3{
+    max-width: 80%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    padding: 0;
+    margin: 3% auto 3% auto;
+}
+
+.link{
+    background-color: black;
+    color:white;
+    border: 4px solid blue;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 0.5%;
+    text-align: center;
+}
+:hover.link{
+    padding: 1%;
+    margin: 1.5%;
+    background-color: black;
+    border: 4px solid blue;
+    color: blue;
+    text-align: center;
+}
+
+
+
+/*___SPORTSZEREK_TAGJEI___*/
+
+.image4{
+    max-width: 90%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    margin: 3% auto 3% auto;
+}
+
+.image5{
+    max-width: 90%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    margin: 5px;
+    margin: 3% auto 3% auto;
+}
+
+figure{
+    display: flex;
+    flex-basis: 92%;
+    padding: 0;
+    margin: 0;
+}
+
+/*___URLAP_TAGJEI___*/
+
+#jatek{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    border: 5px dashed black;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.image6{
+    max-width: 90%;
+    border: 3px ridge white;
+    border-radius: 10px;
+    margin: 3% auto 3% auto;
+}
+
+.nyeremenyjatek{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 4%;
+    padding: 0;
+}
+
+.nyeremenyes{
+    flex-basis: 98%;
+}
+
+#nyeremeny{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.felmeres_tarolo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.kitoltendo{
+    display: flex;
+    flex: 1 1 45%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+.kerdes{
+    display: flex;
+    flex-basis: 90%;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-right: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+
+.felmeres{
+    display: flex;
+    flex-basis: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-bottom: 3px;
+    margin-top: 3px; 
+}
+
+.radio_kitoltendo{
+    display: flex;
+    flex-basis: 30%;
+    align-self: center;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-bottom: 3px;
+    margin-top: 3px; 
+    color: #ffffff;
+}
+
+.radio_felmeres{
+    display: flex;
+    flex-basis: 3%;
+    margin-left: auto;
+    margin-right:8%;
+    margin-bottom:3px;
+    margin-top: 3px;
+}
+
+.tajekoztato{
+    justify-self: center;
+    flex-basis: 40%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.adatvedelem{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    align-self: center;
+    flex-basis: 80%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    color: #ffffff;   
+}
+
+.adatvedelmi_elfogadas{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    align-self: center;
+    justify-content: start;
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-basis: 10%;
+}
+
+.adatvedelmi{
+    display: flex;
+    align-self: center;
+    flex-basis: 2%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+#submit{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    padding: 1%;
+    margin: 5% 2%;
+    text-align: center;
+    justify-self: center;
+}
+
+#submit:hover{
+    border: 3px solid #ffffff;
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    margin: 4% 1%;
+}
+
+#reset{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    padding: 1%;
+    margin: 5% 2%;
+    text-align: center;
+    justify-self: center;
+}
+
+#reset:hover{
+    border: 3px solid white;
+    background-color: grey;
+    color: white;
+    padding: 2%;
+    margin: 4% 1%;
+}
+
+.labda_label{
+    display: flex;
+    flex-basis: 60%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    padding: 0;
+}
+
+.labdarendeles{
+    margin-top: 0.25%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-basis: 90%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.checkbox_felmeres{
+    flex-basis: 40%;
+    margin-left: 10%;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#szamol{
+    flex-basis: 30%;
+    margin: 1%;
+    border: 3px solid black;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 1.1em;
+}
+
+:hover#szamol{
+    padding: 2%;
+    margin: 0;
+    background-color: blue;
+    border: 3px solid #ffffff;
+    color:#ffffff;
+}
+
+#span{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 0.2%;
+    font-size: 0.8em;
+}
+
+/*___PC_MODIFIKÁCIÓ___*/
+
+@media all and (min-width: 600px) {
+
+    /*tablet*/
+    
+    header{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    #oldal{
+        flex-basis: 48%;
+        align-self: center;
+        margin: 1%;
+    }
+
+    #masodik_oldal{
+        flex-basis: 48%;
+        align-self: center;
+        margin: 1%;
+    }
+
+    .bevezeto{
+        margin: 1%;
+    }
+
+    .labda_label{
+        flex-basis: 35%;
+    }
+
+    .checkbox_felmeres{
+        flex-basis: 25%;
+        margin-left: 0;
+    }
+
+    #szamol{
+        flex-basis: 10%;
+        font-size: 0.9em;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    /*pc*/
+
+    #navigacio{
+        margin-top: -0.5%;
+    }
+
+    a{
+        flex-basis: 15%;
+        font-size: 1.5em;
+    }
+    
+    .first{
+        flex-basis: 15%;
+        width: 23%;
+    }
+
+    #oldal{
+        flex-basis: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+        /*background-color: #ffffff;*/
+    }
+
+    #masodik_oldal{
+        flex-basis: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+    }
+
+    .bevezeto{
+        flex-basis: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+    }
+
+    .kepes{
+        flex-basis: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+        padding: 5%;
+        /*background-color: #ffffff;*/
+    }
+
+    .cim{
+        flex-basis: 20%;
+    }
+    
+    .paragrafus{
+        flex-basis: 60%;
+    }
+
+    /*.tabla2{
+        flex-basis: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+    figure{
+    flex-basis: 58%;
+    }
+
+    .image1{
+        max-width: 43vw;
+    }
+
+    .image2{
+        max-width: 43vw;
+    }
+
+    .image3{
+        max-width: 43vw;
+    }
+
+    .image4{
+        max-width: 43vw;
+    }
+
+    .image5{
+        max-width: 43vw;
+    }
+
+        .image6{
+        max-width: 43vw;
+    }
+
+    .link{
+        font-size: 1em;
+        padding: 1%;
+        border: 3px solid blue;
+    }
+
+    :hover.link{
+        border: 5px solid blue;
+    }
+
+    .nyeremenyes{
+        flex-basis: 58%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nyeremenyjatek{
+        margin-top: 4%;
+        margin-bottom: 1%;
+    }
+
+    .kitoltendo{
+        flex-basis: 22%;
+        margin-left: 15%;
+    }
+
+    .felmeres{
+        flex-basis: 20%;
+        margin-right: 15%;
+    }
+
+    .kerdes{
+        flex-basis: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom:1%;
+        margin-top: 5%;
+    }
+
+    .radio_kitoltendo{
+        flex-basis: 40%;
+        justify-content: end;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .radio_felmeres{
+        flex-basis: 3%;
+        margin-left: 0%;
+        margin-right: 15%
+    }
+
+    .adatvedelem{
+        flex-basis: 70%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .adatvedelmi_elfogadas{
+        flex-basis: 10%;
+        margin: 1%;
+        justify-content: start;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .adatvedelmi{
+        flex-basis: 2%;
+        margin: 1%;
+        justify-content: start; 
+    }
+
+    #submit{
+        font-size: 0.9em;
+    }
+
+    :hover#submit{
+        padding: 1.5%;
+        margin: 4.5% 1.5%;
+    }
+
+    #reset{
+        font-size: 0.9em;
+    }
+
+    :hover#reset{
+        padding: 1.5%;
+        margin: 4.5% 1.5%;
+    }
+
+    .labda_label{
+        flex-basis: 35%;
+        margin-left:0;
+    }
+
+    .checkbox_felmeres{
+        flex-basis: 25%;
+        margin-left: 0;
+    }
+
+    .labdarendeles{
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 0;
+        flex-basis: 70%;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .galleria{
+        flex-basis: 60%;
+    }
+}
+
+
+

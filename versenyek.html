@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Végh Balázs">
+    <meta name="description"
+        content="Ez a weboldal egy rövid bemutató a freestyle foci versenyekről. Az oldal végén megtekinthető egy rövid fotóalbum a versenyekről és a sportágról magáról.">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Versenyek</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="galleria-1.6.1(1)/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="galleria-1.6.1(1)/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(`#images`).galleria(
+                width = 450,
+                height = 500
+            );
+        });
+    </script>
+    <style>
+        .galleria {
+            width: 90vh;
+            height: 90vh;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="fejlec">
+        <h1>Versenyek</h1>
+    </header>
+    <div class="container">
+        <nav id="navigacio">
+            <article class="first">
+                <a href="index.html">Kezdőlap</a>
+            </article>
+            <article class="first">
+                <a href="sportaginfo.html">Sportáginfók</a>
+            </article>
+            <article class="first">
+                <a href="sporteszkozok.html">Sporteszközök</a>
+            </article>
+            <article class="first">
+                <a href="#" id="current">Versenyek</a>
+            </article>
+        </nav>
+        <article class="kepes">
+            <h2 class="cim">Mi az a freestyle verseny?</h2>
+            
+                <p class="paragrafus">
+                    A sportág fennállása alatt már számtalan féle versenyzési mód alakult ki a freestyle
+                    focisták
+                    számára. Ezek között a laikus szemeknek talán mindegyik ugyanolyannak tűnhet, vagy
+                    legalábbis
+                    nagyon hasonlónak. De ez egyáltalán nem igaz. Az egy az egy elleni párbajoktól kezdve az
+                    egyéni
+                    maximum teljesítményen át a leghosszabb kombinációsorozatig mindenre van már versenymód.
+                </p>
+                <p class="paragrafus">
+                    A freestyle foci versenyekre bárki kvalifikálhat, ha a kinevezett zsűri által a tudásának
+                    szintje megfelelő hozzá. Ez általában az első körben a Covid óta videós online kvalifikáció
+                    formájában van lebonyolítva, de van, ahol személyesen kell megmutatni a sportolónak, hogy
+                    mit tud.
+                </p>
+                <p class="paragrafus">
+                    Az ilyen rendezvények nem csak a sportág képviselőinek, hanem mindenki számára érdekesek
+                    lehetnek. Általában egy minőségi helyszínen vannak lebonyolítva a versenyek, ahol kapható
+                    étel, ital és rengeteg látványos és egyedi mozdulat, amit nem sok helyen láthat az ember.
+                </p>
+                <figure><img src="kepek_a_weblaokhoz/ricardinho.jpg"
+                    alt="Ez egy kép Ricardinhorol, amint egy trükköt csinál a Red Bull Street Style versenyen."
+                    class="image3"> </figure>
+        </article>
+        <article class="kepes">
+            <h2 class="cim">
+                Battle
+            </h2>
+            <p class="paragrafus">
+                A legismertebb és legnagyobb volumenű versenyszám a freestyle focisták körében. Ez egy egy
+                az egy elleni
+                küzdelem, ahol mindenki a legjobb trükkjeit kell, hogy megmutassa. Fontos, hogy nem egy,
+                hanem az összes
+                alágában a sportnak valamilyen szinten benne kell lennie a show-ban, amit ilyenkor letesz a
+                freestyler a
+                színpadra. A battle során mindkét versenyzőnek három fél perces köre van, amiben szabadon
+                szárnyalhat a fantáziája és megmutathatja miért érdemes a győzelemre. Legtöbbször azok érnek
+                el sikereket ebben a versenyszámban, akik a legtöbb féle ágát mutatják meg a sportnak,
+                lower-t, upper-t, sitting-et és akrobatikus elemeket is tartalmaz ez a három kör. A legtöbb
+                battle világbajnoksággal a norvég Erlend Fagerli rendelkezik, aki többször elmondta, hogy
+                ebben a sportban a leglényegesebb és legszebb a változatosság. Az, hogy használja a sportoló
+                a kreativitását, mindig akarjon újat mutatni és a saját határait feszegesse. Így Erlend
+                szerint, kitartó munkával el lehet érni a csúcsra. Ugyanakkor a battle (és nem mellesleg az
+                összes többi freestyle football versenyszám) zsűrizése és értékelése egy nagyon nehéz és
+                szubjektív dolog. Ennek egyik oka az, hogy nagyon nehéz, sőt lehetetlen összehasonlítani egy
+                akrobatikus mozdulatot egy nehéz lower trükkel. Ettől függetlenül ez a legnépszerűbb ága a
+                sportnak, a nagy világversenyek TOP16 és TOP8 battle-jeit sok laikus is nézi, akár élőben,
+                nem csak a freestyle foci közösség tagjai.
+            </p>
+            <p class="ime">
+                Íme egy battle, 
+            </p>
+            <a href="https://youtu.be/m82106NWTRE?si=gqXPB-QmqG9-whre" target="_blank"
+                    class="link">2023-as Super Ball
+                    világbajnokság döntője Jesse Marlet és Patrick Shaw között.</a>
+        </article>
+        <article class="kepes">
+            <h2 class="cim">
+                Ironman
+            </h2>
+            <p class="paragrafus">
+                Az ironman az egyik legnehezebb ágazata a freestyle versenyeknek. Legalábbis a
+                legmegterhelőbb állóképességben. Ennek a versenymódnak az a lényege, hogy a versenyzőknek
+                minél tovább kell lower trükkököket csinálniuk és maximum 4 vagy 5 (aktuális versenytől
+                függően) ugyanolyan trükk lehet egymás után. Az első trükktől addig mérik az időt, ameddig
+                leesik a labda. Ez a komolyabb világversenyeken nem kap sok figyelmet kap, mivell ez inkább
+                a freestylereknek egy presztízs dolog, ha jó helyen végeznek, ebben a versenyszámban. Fontos
+                megjegyezni, hogy csak egyes (szimpla) kerüléseket szabad végezni, nem lehet benne csak
+                basic kombinációkkal versenybe szállni. Ez annyit jelent, hogy a világkör (atw), a
+                világugrás (htw) és ezeknek reverse, azaz másik irányba elvégzett variációi megengedettek.
+            </p>
+            <p class="ime">
+                Íme egy videó
+            </p>
+            <a href="https://www.youtube.com/watch?v=Kjp3Uca_SVw" target="_blank" class="link">a 2023-as
+                Super
+                Ball ironman versenyéről.</a>
+        </article>
+        <article class="kepes">
+            <h2 class="cim">
+                Challenge
+            </h2>
+            <p class="paragrafus">
+                A challenge az egyik legnagyobb volumenű versenyesemény a battle után. Ebben az esetben
+                annyi a különbség, hogy van egy fix követelményrendszer (nehézségi szintben), hogy milyen
+                lower trükköket kell teljesíteni a különböző körökben. Az első szinten még nagyon egyszerű
+                trükköket kell megcsinálni és ahogy halad a verseny, egyre magasabb szinteken, egyre
+                nehezebb trükköket kell megcsinálni a versenyzőknek.A challenge-ken szintén vannak bírái,
+                akik elfogadják az
+                adott szinten megcsinált trükkjét az adott versenyzőnek. Mivel az is egy fontos paraméter,
+                hogy ugyan vannak előírt trükkök, de nem kötelező ezeket csinálni, ezek csupán a nehézségi
+                szint megadására vannak, lényegében ajánlások. A legmagasabb szinteken már hármas
+                kerüléseket is kell csinálni, esetleg három és feles kerüléseket. Vagy a freestyle egyik
+                másik olyan módját, amit rengeteg gyakorlással tud csak elérni az ember, ezek a no touck-ok.
+                A no touck-ok abból állnak, hogy feles trükköket (fél, másfél, két és fél vagy három és fél)
+                csinál egymás után a freestyler. Viszont az az igazán nehéz benne, hogy két ilyen trükk
+                között nincs érintés, azaz egyikből a másikba kell "repülni", ezért nevezik a szakmai
+                berkeken belül repülőknek a no touch-okat. Ugyan a külső szemlélőnek ez lehet a
+                legunalmasabb versenyszám, hiszen rendkívül időt töltenek a versenyzők a színpadon, ez is
+                egy egészen látványos. Igazán akkor válik érdekessé, ha az ember tudja már, hogy mit lát
+                amikor egy ilyen versenyt néz.
+            </p>
+            <p class="ime">
+                Íme egy videó a
+            </p>
+            <a href="https://www.youtube.com/watch?v=q3SpIhCZ83c" target="_blank" class="link">2023-as
+                Super Ball
+                világbajnokság challenge-ről.</a>
+        </article>
+
+        <article class="kepes">
+            <h2 class="cim">
+                Best trick
+            </h2>
+            <p class="paragrafus">
+                A best trick neve nem hazudik, ez a versenyszáám arról szól, hogy a versenyzőnek a
+                legnehezebb trükkjét kell bemutatnia a zsűrinek. Általában két részre van bontva ez a
+                versenyszám, mivel nem nagyon lehet összehasonlítani nehézségi szintben egy nehéz lower
+                trükköt egy nehéz akrobatikus trükkel. Szóval a két kisebb ág a kreatív és a hardcore ág. A
+                hardcore a lower trükköket jelenti ebben az esetben, a kreatív perdig valamilyen akrobatikus
+                vagy tényleg kreatív nem lower trükköt, amit még nem látott a világ. Mindkét esetben érdemes
+                nyomon követni ezt a versenyszámot, ugyanis ebben szoktak a legváratlanabb és legjobb
+                trükkök, hiszen itt nincsen semmilyen időbeli követelés, maximum annyi, hogy hény próbája
+                van a freestylernek. Itt nincs olyan követelmény, hogy milyen stílusban kell csinálni a
+                trükköt és nem kell utána teljesíteni még, mint például egy battle-ben. Ugyanakkor mivel
+                emiatt általában erre lenne a legtöbb jelentkező a nagy világversenyeken ezt a műfajt
+                hanyagolják, nagyon sok időt emésztene fel és nincs erre kapacitása se időben, se pénzben a
+                WFFA-nak (World Freestyle Football Assosiation).
+            </p>
+        </article>
+
+        <article class="kepes">
+            <h2 class="cim">
+                Egyéb versenyek
+            </h2>
+            <p class="paragrafus">
+                Még sok egyéb versenyzési mód van, de ezek a legfontosabbak és legtöbbet ezzel találkozhat
+                az ember, ha freestyle versennyel kerül szembe. A többi nem érdemes komolyabban említésre,
+                persze az ott versenyző freestylerek nem kevésbé elismertek a közösségen belül, mint a fent
+                említett versenyágakban teljesítő sportolók. Nem az ő érdemeiket csorbítja az, hogy nem
+                kapnak itt említést.
+            </p>
+        </article>
+
+        <div class="galleria" id="images">
+
+            <!--A kikommentelt képek minősége utólag nem felelt meg, ezért lettek kihagyva a galériából.-->
+
+            <!--<img src="kepgaleria/elsokep.jpg" alt="kep" title="title">-->
+            <img src="kepgaleria/masodikkel.jpg" alt="Camalio egy crossovert-t csinál."
+                title="Kamalio: crossover">
+            <img src="kepgaleria/harmadikkep.jpg" alt="Sean Garnier a talpán tartja a labdát a háta mögött."
+                title="Sean Garnier: dragon stall">
+            <img src="kepgaleria/huszonhatodikkep.jpg" alt="Egy freestyler a talpán egyensúlyozza a labdát."
+                title="Talpon tartás">
+            <img src="kepgaleria/otodikkep.jpg" alt="Sean garnier a naplementében csinál trükköket a fejével."
+                title="Sean Garnier a naplementében.">
+            <!--<img src="kepgaleria/hatodikkep.jpg" alt="kep" title="title">--->
+            <img src="kepgaleria/heteddikkep.jpg" alt="Sven egy nehéz sarkas kerülést végez."
+                title="Sven a saját trükkje közben">
+            <img src="kepgaleria/nyolcadikkep.jpg" alt="Jesse Marlet a Super Ball nevű versenyen."
+                title="Jesse Marlet a Super Ball-on">
+            <img src="kepgaleria/kilencedikkep.jpg" alt="Andrew Henderson a fején egyensúlyoz egy labdát."
+                title="Fejen tartás">
+            <img src="kepgaleria/tizedikkep.jpg" alt="A képen Sean Garnier ülve dekázik a labdával a sípcsontján." title="Shin juggling">
+            <img src="kepgaleria/tizenegyeddikkep.jpg"
+                alt="A képen egy labdát tart a talpán egy freestyler, kézenállás közben." title="Jordan stall">
+            <img src="kepgaleria/tizenkettedikkep.webp" alt="Sean Garnier X-catch nevű trükkje." title="Sean Garnier: X-catch">
+            <img src="kepgaleria/tizenharmadikkep.jpg" alt="Egy cigánykerék szerű trükköt láthatunk." title="Roll back flip">
+            <img src="kepgaleria/tizennegyedikkep.jpg" alt="A képen Laura Biondo tartja a talpán a labdát." title="Laura Biondo: sole stall">
+            <img src="kepgaleria/tizenotodikkep.jpg" alt="A képen Pat Shaw szaltózik miközben a labda nem esik le." title="Pat Shaw: backflip move">
+            <img src="kepgaleria/tizenhatodikkep.jpg" alt="A képen Tobis Becs dekáázik." title="Tobias Becs">
+            <!--<img src="kepgaleria/tizenhetedikkep.jpg" alt="kep" title="title">-->
+            <img src="kepgaleria/tizennyolcadikkep.jpg" alt="Mikolaj fekve tartja a feje oldalán a labdát." title="Mikolaj: side head stall">
+            <img src="kepgaleria/tizenkilencedikkep.jpg" alt="Boyka Ortiz a feje oldalán tartja a labdát" title="Boyka: side head stall">
+            <img src="kepgaleria/huszadikkep.jpg" alt="PWG egy Abbas világkört csinál egy versenyen." title="PWG: Abbas">
+            <!--<img src="kepgaleria/huszonegyedikkep.jpg" alt="kep" title="title">-->
+            <img src="kepgaleria/huszonkettedikkep.jpg" alt="Két freestyler együtt gyakorol." title="Közös edzés">
+            <img src="kepgaleria/huszonnyolcadikkep.jpg" alt="Máté egy nehéz akrobatikus, egy kézen álló trükköt hajt végre." title="Hajagos Máté a Red Bull Stret Style nevű versenyen">
+            <img src="kepgaleria/huszonotodikkep.jpg" alt="Lipták Zoltán a Szabadság hídon egy crossovert csinál." title="Lippi">
+
+        </div>
+
+        <footer>
+            <p>
+                Ez az oldal csupán szemléltető jellegű, beadandó munkának készült!
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
